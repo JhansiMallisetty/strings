@@ -1,0 +1,188 @@
+1)package main
+import "fmt"
+func main() {
+var wish = "hello kludone"
+fmt.Printf(wish)
+}
+
+
+hello kludone
+Program exited.
+
+2)package main
+
+import "fmt"
+
+func main() {
+   var greeting =  "Hello kloudne!\n"
+   fmt.Printf(greeting)
+   fmt.Printf("String Length is: ")
+   fmt.Println(len(greeting))  
+}
+
+Hello kloudne!
+String Length is: 15
+
+Program exited.
+
+3)package main
+
+import ("fmt" "math" )"fmt" "strings")
+
+func main() {
+   greetings :=  []string{"kloud","one!"}   
+   fmt.Println(strings.Join(greetings, " "))
+}
+
+kloud ne!
+
+4)package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println(strings.Contains("seafood", "fish"))
+	fmt.Println(strings.Contains("seafood", "prawns"))
+	fmt.Println(strings.Contains("seafood", ""))
+	fmt.Println(strings.Contains("", ""))
+}
+
+
+false
+false
+true
+true
+
+Program exited.
+
+5)package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println(strings.Count("cheese", "e"))
+	fmt.Println(strings.Count("five", "")) // before & after each rune
+}
+
+3
+5
+
+Program exited.
+
+
+6)package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println(strings.EqualFold("Go", "go"))
+}
+
+true
+
+Program exited.
+
+7)package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Printf("Fields are: %q", strings.Fields("  kloud one  chennai   "))
+}
+
+Fields are: ["kloud" "one" "chennai"]
+Program exited.
+
+8)package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println(strings.Index("chicken", "kloud"))
+	fmt.Println(strings.Index("chicken", "one"))
+}
+
+-1
+-1
+
+Program exited.
+package main
+
+9)import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println(strings.IndexAny("jhansi", "aeiouy"))
+	fmt.Println(strings.IndexAny("mallisetty", ""))
+}
+
+2
+-1
+
+Program exited.
+
+10)package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	s := []string{"kloud", "one", "chennai"}
+	fmt.Println(strings.Join(s, ", "))
+}
+
+kloud, one, chennai
+
+Program exited.
+
+
+11)package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println("ba" + strings.Repeat("na", 2))
+}
+
+banana
+
+Program exited.
+
+12)package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println(strings.Replace("kloud kloud kloud", "on", "one", 2))
+	fmt.Println(strings.Replace("one one one", "one", "learn", -1))
+}
+
+kloud kloud kloud
+learn learn learn
+
+Program exited.
